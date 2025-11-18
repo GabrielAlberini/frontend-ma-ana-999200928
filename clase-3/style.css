@@ -1,0 +1,57 @@
+/* selector, propiedad, valor */
+/* selector de etiqueta: a, form, article, header, footer */
+/* selector de clase: .fondo-claro */
+/* selector por id:  */
+
+img {
+  width: 100px;
+}
+
+.fondo-claro {
+  background-color: bisque;
+}
+
+#subtitulo {
+  color: red;
+}
+
+section {
+  /* background-color: red; */
+}
+
+/* jerarquia */
+
+h5 {
+  color: green !important;
+}
+
+h5 {
+  color: blueviolet;
+}
+
+.titulo-seccion {
+  color: blue;
+}
+
+#habilidades {
+  color: cadetblue;
+}
+
+h5 {
+  color: red;
+}
+
+.titulo-seccion {
+  color: brown;
+}
+
+h5 {
+  color: yellowgreen;
+}
+
+/* Propiedades esenciales */
+/* Colores */
+/* Tipografía */
+/* Fondos */
+/* Bordes */
+/* Espacios */

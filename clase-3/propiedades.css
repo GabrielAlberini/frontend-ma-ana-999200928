@@ -1,0 +1,18 @@
+/* Propiedades esenciales */
+/* Colores */
+/* Tipografía */
+/* Fondos */
+/* Bordes */
+/* Espacios */
+
+/* hexadecimal, rgb, nombre por defecto */
+/* 0-9 / a-f */
+/* red, green, blue */
+p {
+  color: rgb(91, 37, 37);
+  font-family: "montserrat";
+  font-weight: 900;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/046/604/855/small/the-sky-is-filled-with-clouds-and-the-sun-is-shining-brightly-through-them-concept-of-hope-and-positivity-as-the-sun-s-rays-break-through-the-clouds-illuminating-the-sky-photo.jpeg");
+  background-size: cover;
+  padding: 20px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción a CSS</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    /* Esto es un comentario css */
+    /* selector, propiedad, valor */
+    a {
+      background-color: brown;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Estilo en linea -->
+  <header style="background-color:gold;">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png?20150906031702"
+      alt="en la imagen se muestra el texto 'test' en un fondo rojo, esto es el logo del sitio web">
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+        <li>
+          <a href="./projects.html">Mis proyectos</a>
+        </li>
+        <li>
+          <a href="./about-us.html">Sobre mí</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="fondo-claro">
+      <h1>Mi portfolio personal</h1>
+      <h2 id="subtitulo1">Bievenidos a mi espacio personal</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic culpa sed quibusdam ipsum consequuntur, totam
+        accusamus asperiores eaque facilis delectus aperiam soluta quidem vero animi quia modi ea autem id dignissimos
+        fuga. Nulla nihil iure expedita, magni at nobis aspernatur magnam doloremque est quae deleniti. Veniam tempore
+        dignissimos magnam?</p>
+      <h3>Mis hobbies</h3>
+      <ul>
+        <li>Jugar al lol</li>
+        <li>Pasear a la arandela</li>
+        <li>Hacer huerta</li>
+      </ul>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quidem quas similique sequi quaerat magni
+        dolorem quibusdam, ratione atque consequatur a mollitia. Ad consequuntur, nesciunt possimus reiciendis nemo
+        provident iure.</p>
+    </section>
+    <section>
+      <h2 id="subtitulo2" class="fondo-claro">¿Cómo se hace una huerta?</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Qt_MC6iRF18?si=iM31RoZOPjWGQ96M"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section>
+      <h5 id="habilidades" class="titulo-seccion">Mis habilidades</h5>
+    </section>
+  </main>
+</body>
+
+</html>

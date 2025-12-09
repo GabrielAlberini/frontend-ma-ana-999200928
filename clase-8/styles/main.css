@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+:root {
+  --primary-color: #0a9c6f;
+  --grey-900: #0d1919;
+  --grey-800: #121b22;
+  --grey-700: #1f2c34;
+  --grey-300: #fefff6;
+  --grey-200: #f1f2f6;
+  --green-400: #138b80;
+  --green-300: #2dca7a;
+  --green-100: #dcf8c6;
+  --primary-font: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  padding: 40px;
+}
+
+.app {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* aside styles */
+
+aside {
+  background-color: var(--grey-900);
+  color: white;
+}
+
+aside header {
+  background-color: var(--grey-800);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profile h2 {
+  font-size: 22px;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 7px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--grey-800);
+  color: var(--grey-300);
+  transition: transform .2s;
+}
+
+.actions button svg {
+  width: 20px;
+}
+
+.actions button:hover {
+  background-color: var(--grey-700);
+  transform: translateY(-4px);
+}
+
+/* search input */
+.search {
+  background-color: var(--grey-800);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 10px;
+}
+
+.search form input {
+  background-color: var(--grey-700);
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+
+.search input:focus {
+  outline: 1px solid var(--grey-300);
+}
+
+.chats ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-chat {
+  background-color: var(--grey-900);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-chat img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.user-chat:hover {
+  background-color: var(--grey-700);
+  cursor: pointer;
+  border-left: 3px solid var(--green-400);
+}

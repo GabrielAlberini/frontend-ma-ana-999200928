@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de contactos</title>
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+  <div class="welcome">
+    <h1>Bienvenido a tu agenda de contactos</h1>
+    <h2>Agrega el primero para comenzar</h2>
+    <button id="btn-start">Comencemos</button>
+  </div>
+  <div class="container">
+    <h1>Agenda de contactos</h1>
+    <form>
+      <input type="text" id="name" placeholder="Nombre" autocomplete="off">
+      <input type="email" id="email" placeholder="Email" autocomplete="off">
+      <input type="hidden" id="contactId">
+      <button id="btn-cancel" type="button">Cancelar</button>
+      <button>Guardar</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <button id="clearContacts">Limpiar contactos</button>
+  </div>
+
+  <script src="./src/app/main.js"></script>
+</body>
+
+</html>

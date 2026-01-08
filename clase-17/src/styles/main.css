@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Fondo general */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* welcome styles */
+
+/* ==========================
+   Pantalla de bienvenida
+========================== */
+
+.welcome {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 30px;
+  z-index: 100;
+}
+
+/* Título principal */
+.welcome h1 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Subtítulo */
+.welcome h2 {
+  font-size: 18px;
+  color: #e0e7ff;
+  font-weight: 400;
+}
+
+/* Botón de inicio */
+.welcome button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #667eea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover botón */
+.welcome button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contenedor principal */
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 700px;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+form input {
+  flex: 1 1 200px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Botones del formulario */
+form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Botón guardar */
+form button:not(#btn-cancel) {
+  background: #667eea;
+  color: #fff;
+}
+
+form button:not(#btn-cancel):hover {
+  background: #5a6fd1;
+}
+
+/* Botón cancelar */
+#btn-cancel {
+  background: #e5e7eb;
+  color: #333;
+}
+
+#btn-cancel:hover {
+  background: #d1d5db;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Encabezados */
+thead {
+  background: #f3f4f6;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Filas */
+td {
+  padding: 10px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+/* Hover filas */
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Botones de acciones */
+.btn-update,
+.btn-delete {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Actualizar */
+.btn-update {
+  background: #10b981;
+  color: white;
+}
+
+.btn-update:hover {
+  background: #059669;
+}
+
+/* Borrar */
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+/* Welcome responsive */
+@media (max-width: 500px) {
+  .welcome h1 {
+    font-size: 26px;
+  }
+
+  .welcome h2 {
+    font-size: 16px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+}

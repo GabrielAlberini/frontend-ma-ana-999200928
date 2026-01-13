@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clon de Whatsapp</title>
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="app">
+    <aside>
+      <header>
+        <div class="profile">
+          <img src="https://github.com/gabrielalberini.png" alt="foto de perfil">
+          <h2>Gabriel Alberini</h2>
+        </div>
+        <div class="actions">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" viewBox="0 0 20 20">
+              <path fill="currentColor"
+                d="M0 6c0-1.1.9-2 2-2h3l2-2h6l2 2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10 10a5 5 0 1 0 0-10a5 5 0 0 0 0 10m0-2a3 3 0 1 1 0-6a3 3 0 0 1 0 6" />
+            </svg>
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                <circle cx="9" cy="9" r="2" />
+                <path d="m21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+              </g>
+            </svg>
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M19.9 12.66a1 1 0 0 1 0-1.32l1.28-1.44a1 1 0 0 0 .12-1.17l-2-3.46a1 1 0 0 0-1.07-.48l-1.88.38a1 1 0 0 1-1.15-.66l-.61-1.83a1 1 0 0 0-.95-.68h-4a1 1 0 0 0-1 .68l-.56 1.83a1 1 0 0 1-1.15.66L5 4.79a1 1 0 0 0-1 .48L2 8.73a1 1 0 0 0 .1 1.17l1.27 1.44a1 1 0 0 1 0 1.32L2.1 14.1a1 1 0 0 0-.1 1.17l2 3.46a1 1 0 0 0 1.07.48l1.88-.38a1 1 0 0 1 1.15.66l.61 1.83a1 1 0 0 0 1 .68h4a1 1 0 0 0 .95-.68l.61-1.83a1 1 0 0 1 1.15-.66l1.88.38a1 1 0 0 0 1.07-.48l2-3.46a1 1 0 0 0-.12-1.17ZM18.41 14l.8.9l-1.28 2.22l-1.18-.24a3 3 0 0 0-3.45 2L12.92 20h-2.56L10 18.86a3 3 0 0 0-3.45-2l-1.18.24l-1.3-2.21l.8-.9a3 3 0 0 0 0-4l-.8-.9l1.28-2.2l1.18.24a3 3 0 0 0 3.45-2L10.36 4h2.56l.38 1.14a3 3 0 0 0 3.45 2l1.18-.24l1.28 2.22l-.8.9a3 3 0 0 0 0 3.98m-6.77-6a4 4 0 1 0 4 4a4 4 0 0 0-4-4m0 6a2 2 0 1 1 2-2a2 2 0 0 1-2 2" />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <div class="search">
+        <form>
+          <input type="search" placeholder="Buscar un chat o iniciar uno nuevo">
+        </form>
+      </div>
+      <section class="chats">
+        <ul>
+          <li class="user-chat">
+            <img src="https://placehold.co/100x100" alt="foto de perfil de maría lópez">
+            <div>
+              <h3>María López</h3>
+              <p>¿Nos vemos a las 18?</p>
+            </div>
+          </li>
+          <li class="user-chat">
+            <img src="https://placehold.co/100x100" alt="foto de perfil de maría lópez">
+            <div>
+              <h3>Grupo: Proyecto</h3>
+              <p>Push a main — revisión</p>
+            </div>
+          </li>
+          <li class="user-chat">
+            <img src="https://placehold.co/100x100" alt="foto de perfil de maría lópez">
+            <div>
+              <h3>Soporte</h3>
+              <p>Tu factura está lista</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <div class="chat-panel">
+      <header class="chat-header">
+        <img src="https://placehold.co/100x100" alt="foto de perfil">
+        <div>
+          <h3>María López</h3>
+          <p>en linea</p>
+        </div>
+      </header>
+      <section class="messages">
+        <div class="message">
+          <p class="content">¡Hola! ¿Querés venir por un café?</p>
+          <p class="time">14:12</p>
+        </div>
+        <div class="message me">
+          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
+          <p class="time">14:13</p>
+        </div>
+        <div class="message">
+          <p class="content">Dale dale, en la plaza entonces 😋</p>
+          <p class="time">14:14</p>
+        </div>
+        <div class="message me">
+          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
+          <p class="time">14:13</p>
+        </div>
+        <div class="message me">
+          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
+          <p class="time">14:13</p>
+        </div>
+        <div class="message me">
+          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
+          <p class="time">14:13</p>
+        </div>
+      </section>
+      <footer>
+        <button id="btn-attach" class="attach">
+          <svg xmlns="http://www.w3.org/2000/svg" width="131.11" height="128" viewBox="0 0 718 701">
+            <path fill="currentColor"
+              d="m175 397l280-280c3-3 27-27 65-40c53-17 107-3 150 40c44 43 57 96 40 149c-12 38-37 64-40 67L369 634c-52 52-182 119-302 0c-119-119-51-250 0-301L390 9c12-12 31-12 43 0s12 31 0 43L111 376c-5 4-106 109 0 215c103 103 204 11 215 0l301-302s17-17 25-41c10-32 3-60-25-88c-60-60-118-10-129 0L218 439c-10 10-17 27 0 44s33 9 43 0l194-194c12-11 32-11 43 0c12 12 12 32 0 44L304 526c-27 26-82 47-129 0c-48-47-27-103 0-129" />
+          </svg>
+        </button>
+        <form>
+          <textarea type="text" placeholder="Escribe un mensaje"></textarea>
+        </form>
+        <button class="send">
+          <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z" />
+          </svg>
+        </button>
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>

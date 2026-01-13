@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clon de Whatsapp</title>
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,33 +47,10 @@
         </div>
       </header>
       <div class="search">
-        <form>
-          <input type="search" placeholder="Buscar un chat o iniciar uno nuevo">
-        </form>
+        <input id="search" type="search" placeholder="Buscar un chat o iniciar uno nuevo" autocomplete="off">
       </div>
       <section class="chats">
         <ul>
-          <li class="user-chat">
-            <img src="https://placehold.co/100x100" alt="foto de perfil de maría lópez">
-            <div>
-              <h3>María López</h3>
-              <p>¿Nos vemos a las 18?</p>
-            </div>
-          </li>
-          <li class="user-chat">
-            <img src="https://placehold.co/100x100" alt="foto de perfil de maría lópez">
-            <div>
-              <h3>Grupo: Proyecto</h3>
-              <p>Push a main — revisión</p>
-            </div>
-          </li>
-          <li class="user-chat">
-            <img src="https://placehold.co/100x100" alt="foto de perfil de maría lópez">
-            <div>
-              <h3>Soporte</h3>
-              <p>Tu factura está lista</p>
-            </div>
-          </li>
         </ul>
       </section>
     </aside>
@@ -86,30 +63,6 @@
         </div>
       </header>
       <section class="messages">
-        <div class="message">
-          <p class="content">¡Hola! ¿Querés venir por un café?</p>
-          <p class="time">14:12</p>
-        </div>
-        <div class="message me">
-          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
-          <p class="time">14:13</p>
-        </div>
-        <div class="message">
-          <p class="content">Dale dale, en la plaza entonces 😋</p>
-          <p class="time">14:14</p>
-        </div>
-        <div class="message me">
-          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
-          <p class="time">14:13</p>
-        </div>
-        <div class="message me">
-          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
-          <p class="time">14:13</p>
-        </div>
-        <div class="message me">
-          <p class="content">Si, perfecto. ¿A las 18 te viene bien?</p>
-          <p class="time">14:13</p>
-        </div>
       </section>
       <footer>
         <button id="btn-attach" class="attach">
@@ -118,18 +71,21 @@
               d="m175 397l280-280c3-3 27-27 65-40c53-17 107-3 150 40c44 43 57 96 40 149c-12 38-37 64-40 67L369 634c-52 52-182 119-302 0c-119-119-51-250 0-301L390 9c12-12 31-12 43 0s12 31 0 43L111 376c-5 4-106 109 0 215c103 103 204 11 215 0l301-302s17-17 25-41c10-32 3-60-25-88c-60-60-118-10-129 0L218 439c-10 10-17 27 0 44s33 9 43 0l194-194c12-11 32-11 43 0c12 12 12 32 0 44L304 526c-27 26-82 47-129 0c-48-47-27-103 0-129" />
           </svg>
         </button>
-        <form>
-          <textarea type="text" placeholder="Escribe un mensaje"></textarea>
+        <form id="formMessage">
+          <textarea id="message" type="text" placeholder="Escribe un mensaje"></textarea>
+          <button class="send">
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z" />
+            </svg>
+          </button>
         </form>
-        <button class="send">
-          <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z" />
-          </svg>
-        </button>
       </footer>
     </div>
   </section>
+
+  <script src="./src/app/filterData.js"></script>
+  <script src="./src/app/handleMessages.js"></script>
 </body>
 
 </html>

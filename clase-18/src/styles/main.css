@@ -158,6 +158,13 @@ aside header {
   color: var(--grey-400);
 }
 
+.empty {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 20px;
+}
+
 .user-chat:hover {
   background-color: var(--grey-700);
   border-left: 3px solid var(--green-300);
